@@ -36,8 +36,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
         <jackson.version>2.4.0</jackson.version>
         <jersey.version>2.10</jersey.version>
     </properties>
@@ -100,9 +100,9 @@
 
         <!-- _____-sources.jar generation -->
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>2.2.1</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.2.1</version>
           <executions>
             <execution>
               <id>attach-sources</id>
@@ -115,9 +115,9 @@
 
         <!-- _____-javadoc.jar generation -->
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.9.1</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.2.0</version>
           <executions>
             <execution>
               <id>attach-javadocs</id>
@@ -128,11 +128,11 @@
           </executions>
         </plugin>
 
-        <!-- For signing -->
+        <!-- For signing
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.5</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
           <executions>
             <execution>
               <id>sign-artifacts</id>
@@ -143,6 +143,7 @@
             </execution>
           </executions>
         </plugin>
+        -->
       </plugins>
     </build>
     
